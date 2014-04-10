@@ -1,0 +1,63 @@
+//
+//  SingleTonTool.h
+//  PDFTest
+//
+//  Created by lyy on 3/4/12.
+//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface SingleTonTool : NSObject
+{
+    
+ 
+    int                   _DeviceWidth;
+    int                   _DeviceHeight;
+    NSString            * _movieName;
+ 
+    int                   _goodFriendSceneNum;
+    int                   _sceneNum;
+    int                   _seriesNum;
+    
+    NSString            * _fsItemSpritePositionStr;
+    NSString            * _fsBgPicStr;
+    NSString            * _fsBgSoundStr;
+    NSString            * _fsMovSoundStr;
+
+    NSString            * _finshSceMovStr;
+    NSString            * _finshScebgPicStr;
+    
+    NSString            * _scenePlistName;
+    
+    BOOL                  _canPress;
+    id                    _sceneNode;
+    int                   _sceneTableBarLoadNum;
+}
+
+
+@property(nonatomic,assign)int                   DeviceWidth;
+@property(nonatomic,assign)int                   DeviceHeight;
+@property(nonatomic,retain)NSString            * movieName;
+@property(nonatomic,assign)int                   goodFriendSceneNum;
+@property(nonatomic,assign)int                   sceneNum;
+@property(nonatomic,assign)int                   seriesNum;
+
+
+
+@property(nonatomic,retain)NSString            * fsItemSpritePositionStr;
+@property(nonatomic,retain)NSString            * fsBgPicStr;
+@property(nonatomic,retain)NSString            * fsBgSoundStr;
+@property(nonatomic,retain)NSString            * fsMovSoundStr;
+
+@property(nonatomic,retain)NSString            * finshSceMovStr;
+@property(nonatomic,retain)NSString            * finshScebgPicStr;
+@property(nonatomic,retain)NSString            * scenePlistName;
+@property(nonatomic,assign)BOOL                  canPress;
+@property(nonatomic,retain)id                    sceneNode;
+@property(nonatomic,assign)int                   sceneTableBarLoadNum;
+
++(SingleTonTool *)defaultMemory;
+
+
+@end

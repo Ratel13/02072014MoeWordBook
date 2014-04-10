@@ -1,0 +1,120 @@
+//
+//  SingleTonTool.m
+//  PDFTest
+//
+//  Created by lyy on 3/4/12.
+//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//
+
+#import "SingleTonTool.h"
+
+static SingleTonTool * singleTonTool = nil;
+
+@implementation SingleTonTool
+
+
+@synthesize DeviceWidth = _DeviceWidth;
+@synthesize DeviceHeight = _DeviceHeight;
+@synthesize movieName = _movieName;
+@synthesize goodFriendSceneNum = _goodFriendSceneNum;
+@synthesize sceneNum = _sceneNum;
+@synthesize seriesNum = _seriesNum;
+
+
+@synthesize fsItemSpritePositionStr = _fsItemSpritePositionStr;
+@synthesize fsBgPicStr = _fsBgPicStr;
+@synthesize fsBgSoundStr = _fsBgSoundStr;
+@synthesize fsMovSoundStr = _fsMovSoundStr;
+
+@synthesize finshSceMovStr = _finshSceMovStr;
+@synthesize finshScebgPicStr = _finshScebgPicStr;
+@synthesize scenePlistName = _scenePlistName;
+@synthesize canPress = _canPress;
+@synthesize sceneNode = _sceneNode;
+@synthesize sceneTableBarLoadNum = _sceneTableBarLoadNum;
+
+
+
+- (id)init
+{
+    self = [super init];
+    if (self) 
+    {
+        
+        self.DeviceWidth  = 0;
+        self.DeviceHeight = 0;
+        self.movieName    = nil;
+        self.goodFriendSceneNum = 0;
+        self.sceneNum = 0;
+        self.seriesNum = 0;
+        
+        
+        
+        self.fsItemSpritePositionStr = nil;
+        self.fsBgPicStr = nil;
+        self.fsBgSoundStr = nil;
+        self.fsMovSoundStr  = nil;
+        
+        self.finshSceMovStr  = nil;
+        self.finshScebgPicStr  = nil;
+        self.scenePlistName = nil;
+        
+        self.canPress = YES;
+        self.sceneNode = nil;
+        self.sceneTableBarLoadNum = 0;
+    }
+    
+    return self;
+}
+
+
+-(void)dealloc
+{
+    
+    [_fsItemSpritePositionStr release];
+    _fsItemSpritePositionStr = nil;
+    
+    [_fsBgPicStr release];
+    _fsBgPicStr = nil;
+    
+    [_fsBgSoundStr release];
+    _fsBgSoundStr = nil;
+    
+    [_fsMovSoundStr release];
+    _fsMovSoundStr = nil;
+    
+    [_finshSceMovStr release];
+    _finshSceMovStr = nil;
+    
+    [_finshScebgPicStr release];
+    _finshScebgPicStr = nil;
+
+    [_scenePlistName release];
+    _scenePlistName = nil;
+    
+    [_sceneNode release];
+    _sceneNode = nil;
+    
+
+    /*[_ release];
+    _ = nil;*/
+    
+    
+    [super dealloc];
+}
+
+
++(SingleTonTool *)defaultMemory
+{
+    if (!singleTonTool)
+    {
+        singleTonTool = [[SingleTonTool alloc] init];
+    }
+    
+    return singleTonTool;
+}
+
+
+
+
+@end

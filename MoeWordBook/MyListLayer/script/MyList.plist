@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>noWordTitle</key>
+	<dict>
+		<key>chinese</key>
+		<string>没有添加单词</string>
+		<key>japanese</key>
+		<string>単語を添えてください</string>
+		<key>english</key>
+		<string>No Word</string>
+	</dict>
+	<key>addWordMessage</key>
+	<dict>
+		<key>chinese</key>
+		<string>请添加单词</string>
+		<key>japanese</key>
+		<string>単語を添えてください</string>
+		<key>english</key>
+		<string>Please Add Word</string>
+	</dict>
+	<key>cancelTitle</key>
+	<dict>
+		<key>chinese</key>
+		<string>取消</string>
+		<key>japanese</key>
+		<string>キャンセル</string>
+		<key>english</key>
+		<string>Cancel</string>
+	</dict>
+	<key>okTitle</key>
+	<dict>
+		<key>chinese</key>
+		<string>添加单词</string>
+		<key>japanese</key>
+		<string>単語を添える</string>
+		<key>english</key>
+		<string>Add Word</string>
+	</dict>
+	<key>AddEnglish</key>
+	<dict>
+		<key>chinese</key>
+		<string>添加英文</string>
+		<key>japanese</key>
+		<string>英語を添える</string>
+		<key>english</key>
+		<string>Add English</string>
+	</dict>
+	<key>ok</key>
+	<dict>
+		<key>chinese</key>
+		<string>确认</string>
+		<key>japanese</key>
+		<string>確認</string>
+		<key>english</key>
+		<string>OK</string>
+	</dict>
+	<key>cancel</key>
+	<dict>
+		<key>chinese</key>
+		<string>取消</string>
+		<key>japanese</key>
+		<string>キャンセル</string>
+		<key>english</key>
+		<string>cancel</string>
+	</dict>
+</dict>
+</plist>

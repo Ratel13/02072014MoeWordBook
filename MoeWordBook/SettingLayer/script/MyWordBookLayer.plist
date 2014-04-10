@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>isHead</key>
+	<dict>
+		<key>japanese</key>
+		<string>もう最初だよ！</string>
+		<key>english</key>
+		<string>Is Head！</string>
+		<key>chinese</key>
+		<string>到头了哦！</string>
+	</dict>
+	<key>isEnd</key>
+	<dict>
+		<key>japanese</key>
+		<string>もう最後だよ！</string>
+		<key>english</key>
+		<string>Here is End</string>
+		<key>chinese</key>
+		<string>到尾了哦！</string>
+	</dict>
+	<key>noWord</key>
+	<dict>
+		<key>japanese</key>
+		<string>先に単語を添えてください！</string>
+		<key>english</key>
+		<string>Please add you word！</string>
+		<key>chinese</key>
+		<string>请先添加单词哦！</string>
+	</dict>
+</dict>
+</plist>
